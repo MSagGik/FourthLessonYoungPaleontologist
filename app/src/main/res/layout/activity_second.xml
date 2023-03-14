@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_paleontology"
+    android:scaleType="fitXY"
+    tools:context=".SecondActivity">
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="350dp"
+      android:layout_height="70dp"
+      android:layout_marginTop="50dp"
+      android:text="Выберете период"
+      android:textSize="23sp"
+      android:textStyle="bold"
+      android:textColor="#D6CFB0"
+      android:background="@drawable/shape_text"
+      android:gravity="center"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+      android:layout_width="350dp"
+      android:layout_height="500dp"
+      android:layout_marginTop="30dp"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    <ImageButton
+        android:id="@+id/imageButtonCenozoic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        app:srcCompat="@drawable/cenozoic"
+        android:backgroundTint="@null"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonMesozoic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        app:srcCompat="@drawable/mesozoic"
+        android:backgroundTint="@null"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonPaleozoic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        app:srcCompat="@drawable/paleozoic"
+        android:backgroundTint="@null"
+        android:background="@null"/>
+  </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
